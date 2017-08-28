@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/guide.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">用户指南</h1>
+		</header>
+		<div class="mui-content">
+		    <p>
+		    	<span>热点问题</span>
+		    </p>
+		    <ul>
+		    	<li id="account" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>注册与账户</span>
+		    	</li>
+		    	<li id="real" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>实名认证相关</span>
+		    	</li>
+		    	<li id="lock" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>开不了锁</span>
+		    	</li>
+		    	<li id="cash" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>押金说明</span>
+		    	</li>
+		    	<li id="recharge" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>充值说明</span>
+		    	</li>
+		    	<li id="report" onclick="clicked(this.id)">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>举报违停</span>
+		    	</li>
+		    	<li id="problems" onclick='clicked(this.id)'>
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>全部问题</span>
+		    	</li>
+		
+		    </ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady()
+		</script>
+		<script type="text/javascript">
+			function clicked(id){
+				console.log(id)
+				mui.openWindow({
+					url:id+'.html'
+				})
+			}
+		</script>
+	</body>
+
+</html>

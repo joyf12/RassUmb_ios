@@ -1,0 +1,53 @@
+	.mui-bar-nav ~ .mui-content {
+        padding-top: 75px;
+    		}
+    .mui-bar-tab {
+   		height:30px;
+    	padding-left:20px;
+     	padding-right:10px;
+    		}
+   	/*nav start*/
+   	.mui-bar-tab {
+   		position:absolute;
+   		top:44px;
+   		background-color:#ccc;
+   		color:#fff;
+   	}
+   	.mui-bar-tab p {
+   		margin:0px;
+   		height:100%;
+   		line-height:30px;
+   		text-align:center;
+   		color:#666;
+   		font-weight: bold;
+   	}
+   	/*nav end*/
+   	/*.mui-content start*/
+   	.mui-content {
+   		padding-top:75px;
+   	}
+   	.mui-content .mui-input-group .mui-input-row {
+   		height:40px;
+   		line-height:40px;
+   	}
+   	.mui-content .mui-input-group .mui-input-row label {
+   		padding-left:20px;
+   		padding-right:0px;
+   		width:20%;
+   	}
+   	.mui-content .mui-input-group .mui-input-row input {
+   		float:left;
+   		width:40%;
+   	}
+   	.mui-content .mui-input-group .mui-input-row #btn {
+   		width:100%;
+   	}
+   	#getCodeNumber {
+   		float:right;
+   		width:30%;
+   		margin-right:20px;
+   		padding-top:10px;
+   		padding-bottom:10px;
+   		
+   	}
+   	/*.mui-content end*/

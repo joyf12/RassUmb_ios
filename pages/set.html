@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/set.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content">
+		    <ul>
+		    	<li id="serve">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>用车协议</span>
+		    	</li>
+		    	<li id="cash">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>押金及计价</span>
+		    	</li>
+		    	<li id="recharge">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>充值说明</span>
+		    	</li>
+		    	<li id="update">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>检查新版本</span>
+		    	</li>
+		    	<li id="about">
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span>关于我们</span>
+		    	</li>
+		    </ul>
+		    <button id="btn" type="button">退出登录</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady()
+		</script>
+		<script>
+			//押金说明
+			document.getElementById('cash').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'cash.html'
+				})
+			})
+			//充值说明
+			document.getElementById('recharge').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'recharge.html'
+				})
+			})
+			//用户协议
+			document.getElementById('serve').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'serve.html'
+				})
+			})
+			//关于我们
+			document.getElementById('about').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'about.html'
+				})
+			})
+			//退出登录
+			document.getElementById('btn').addEventListener('tap',function(){
+				
+			})
+		</script>
+	</body>
+
+</html>

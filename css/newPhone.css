@@ -1,0 +1,69 @@
+.mui-bar-nav a {color:#000;font-weight: bolder;}
+/*.mui-content start*/
+/*.mui-content div start*/
+.mui-content>div {
+	padding:20px 20px 5px;
+}
+.mui-content div p {
+	font-size:12px;
+	color:#666;
+}
+.mui-content div p:first-child {
+	font-size:20px;
+	color:#000;
+	font-weight: bold;
+}
+/*.mui-content div end*/
+/*form start*/
+	.mui-content .mui-input-group {
+		background:transparent;
+		height:60%;
+	}
+   	.mui-content .mui-input-group .mui-input-row {
+   		height:60px;
+   		line-height:60px;
+   		padding-left:10px;
+   		padding-right:10px;
+   	}
+   	.mui-content .mui-input-group .mui-input-row label {
+   		padding:0px;
+   		padding-right:0px;
+   		line-height:60px;
+   		width:25%;
+   	}
+   	.mui-content .mui-input-group .mui-input-row input {
+   		float:left;
+   		padding:0px;
+   		height:60px;
+   		line-height:60px;
+   		width:40%;
+   	}
+   	.mui-content .mui-input-group .mui-input-row #btn {
+   		width:90%;
+   		float:left;
+   		margin-left:5%;
+   	}
+   	#getCodeNumber {
+   		float:right;
+   		padding:0px;
+   		width:30%;
+   		margin-right:10px;
+   		height:40px;
+   		line-height: 40px;
+   		margin-top:10px;
+   	}
+   	/*form end*/
+/*.mui-content button start*/
+.mui-content #btn {
+	width:80%;
+	height:40px;
+	border-radius: 20px;
+	background:dodgerblue;
+	color:#fff;
+	margin-top:50px;
+	margin-left:10%;
+	background:linear-gradient(deepskyblue,dodgerblue);
+}
+
+/*.mui-content button start*/
+/*.mui-content end*/

@@ -1,0 +1,54 @@
+/*.mui-content start*/
+.mui-content {
+	padding:20px;
+}
+.mui-content div:first-child {
+	padding-top:20px;
+	margin:0px;
+}
+.mui-content div h3 {
+	font-weight: bolder;
+}
+.mui-content div span {
+	font-size:12px;
+	color:#999;
+}
+/*提交区域 start*/
+.mui-content .mui-row div {text-align: center;}
+.mui-content .mui-row li {
+	font-size:30px;
+	margin:10px;
+	padding:0px;
+	list-style: none;
+	text-align: center;
+	height:100px;
+	line-height: 100px;
+	border:1px dotted #ccc;
+	background:radial-gradient(#ccc,#bbb);
+}
+.mui-content .mui-row li span {
+	font-size:30px;
+}
+.mui-content .mui-row #all {width:100%;}
+.mui-content .mui-row #all li {
+	width:50%;
+	padding:0px;
+	margin:0 auto;
+	margin-bottom:5px;
+	line-height: 100px;
+}
+/*提交区域 end*/
+.mui-content #btn {
+	width:100%;
+	margin-top:50px;
+	height:40px;
+	border-radius: 20px;
+	margin-bottom:5px;
+	background:linear-gradient(transparent,#ddd)
+}
+.mui-content>p {
+	margin:0px;
+	font-size:12px;
+	text-align: center;
+}
+/*.mui-content end*/

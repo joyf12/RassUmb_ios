@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" href="../css/nickname.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">昵称修改</h1>
+		    <a href="#" id="save" class="mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content">
+		    <input id="phone" type="number"/>
+		    <span id="close" class="mui-icon iconfont icon-guanbi"></span>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){
+				//获取传递过来的参数
+				var self = plus.webview.currentWebview();
+				document.getElementById('phone').value=self.number;
+				plus.storage.setItem('num',self.number);
+			});
+		</script>
+		<script type="text/javascript">
+			//清空
+			document.getElementById('close').addEventListener('tap',function(){
+				document.getElementById('phone').value='';
+			})
+			//保存资料
+			document.getElementById('save').addEventListener('tap',function(){
+				var val = plus.storage.getItem('num');
+				var value = document.getElementById('phone').value;
+				if(value==''){
+					mui.toast('您还没有输入昵称')
+				}else if(val==value){
+					mui.toast('您的昵称还未修改')
+				}else if(value!=''&&val!=value){
+					//ajax请求修改用户信息
+					
+					mui.toast('昵称修改成功')
+				}
+				
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,62 @@
+html,body {height:100%;}
+.active {background:forestgreen}
+/*.mui-content start*/
+.mui-content {height:100%;padding:15px;}
+.mui-content div p {
+	padding:10px;
+	margin:0px;
+	padding-bottom:0px;
+}
+/*充值金额  start*/
+.mui-content li {
+	list-style: none;
+	margin:10px;
+	padding:0px;
+	text-align: center;
+	background:dodgerblue;
+	color:#fff;
+}
+.mui-content .mui-table-view-cell span {
+	display: inline-block;
+	padding:0px;
+	height:100%;
+	line-height: 40px;
+	width:100%;
+	/*margin:10px;*/
+}
+/*充值金额  end*/
+/*支付方式 start*/
+.mui-content ul {
+	padding:0px;
+	margin:0px;
+	margin-top:20px;
+}
+.mui-content ul li {
+	text-align: inherit;
+	background:transparent;
+	color:#000;
+	height:30px;
+	line-height: 30px;
+}
+.mui-content ul li i {
+	color:#01AC06;
+	font-size:20px;
+}
+.mui-content ul li:first-child i {
+	color:#02A9EF;	
+	font-size:18px;
+}
+.mui-content ul li input {
+	float: right;
+	margin-top:10px;
+}
+/*支付方式 start*/
+.mui-content #btn {
+	margin-top:50px;
+	width:100%;
+	background:dodgerblue;
+	height:40px;
+	border-radius: 20px;
+	border:none;
+}
+/*.mui-content end*/

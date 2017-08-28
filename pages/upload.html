@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/upload.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background:transparent;">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<div>
+				<h3>提交资料</h3>
+				<span>身份验证仅用于验证您的身份信息</span>
+			</div>
+			<div class="mui-row">
+		        <div class="mui-col-sm-12 mui-col-xs-12" id="all">
+		            <li class="mui-table-view-cell mui-icon iconfont icon-shouchizhengjian"></li>
+		            <p>手持证件照</p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6" id="font">
+		            <li class="mui-table-view-cell">
+		            	<span class="mui-icon iconfont icon-shenfenzhengzhengmian1"></span>
+		            </li>
+		            <p>证件正面</p>
+		        </div>
+		        <div class="mui-col-sm-6 mui-col-xs-6">
+		            <li class="mui-table-view-cell" id="rever">
+		                    <span class="mui-icon iconfont icon-2"></span>
+		            </li>
+		            <p>证件背面</p>
+		        </div>
+		    </div>
+			<button type="button" id="btn">提交</button>
+			<p>提示：请确认提交照片小于2M</p>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady();
+			
+			
+		</script>
+	</body>
+
+</html>

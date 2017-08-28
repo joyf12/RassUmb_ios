@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/rid_success.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">骑行结束</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="container">
+		    	<p>行程免费</p>
+		    	<p>行程总费用<span id="cos">3元</span></p>
+		    </div>
+		    <ul class="list">
+		    	<li>骑行时间<span id="time" class="mui-pull-right">4分钟</span></li>
+		    	<li>我的钱包<span id="mon" class="mui-pull-right">0元</span></li>
+		    	<li id="route">行程详情<span class="mui-icon mui-icon-arrowright mui-pull-right"></span></li>
+		    	
+		    </ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){});
+			//行程详情
+			document.getElementById('route').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'route.html'
+				})
+			})
+			
+		</script>
+	</body>
+
+</html>

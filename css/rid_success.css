@@ -1,0 +1,30 @@
+/*.mui-content start*/
+.mui-bar-nav~.mui-content {margin-top:44px;padding:20px;}
+/*.mui-content .container start*/
+.mui-content .container p {
+	margin-bottom:10px;
+}
+.mui-content .container p:first-child {
+	font-size:40px;
+	height:60px;
+	margin-bottom:0px;
+	padding-top:10px;
+}
+.mui-content .container p:last-child {
+	padding-bottom:10px;
+	border-bottom:1px solid #ccc;
+}
+/*.mui-content .container end*/
+/*ul start*/
+.mui-content .list {
+	padding:0px;
+	margin:0px;
+}
+.mui-content .list li {
+	list-style: none;
+	height:30px;
+	color:#aaa;
+}
+/*ul end*/
+
+/*.mui-content end*/

@@ -1,0 +1,31 @@
+html,body,.mui-content {height:100%;}
+/*.mui-content start*/
+/*.mui-content div start*/
+.mui-content div {
+	width:100%;
+	margin-top:30%;
+}
+.mui-content div p {
+	font-size:25px;
+	width:100%;
+	text-align: center;
+	margin-bottom:30px;
+}
+.mui-content div p:last-child {
+	font-size:40px;
+	color:deepskyblue;
+	font-weight:bolder;
+}
+/*.mui-content div end*/
+/*.mui-content button start*/
+.mui-content #btn {
+	width:80%;
+	height:50px;
+	margin-top:50%;
+	margin-left:10%;
+	color:#aaa;
+	background-color:transparent;
+	border:none;
+}
+/*.mui-content button end*/
+/*.mui-content end*/

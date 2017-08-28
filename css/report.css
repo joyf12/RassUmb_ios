@@ -1,0 +1,58 @@
+html,body,.mui-content {height:100%;}
+/*.mui-content start*/
+.mui-content {position:relative;}
+.mui-content>div h4 {padding:20px;}
+.mui-content>div img {
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+}
+/*添加图片 start*/
+.mui-content>div div {
+	width:100%;
+	height:120px;
+	background:transparent;
+	margin-top:20px;
+	
+}
+.mui-content>div div span {
+	padding-left:20px;
+	padding-right:20px;
+	line-height:120px;
+	font-size:50px;
+}
+.mui-content>div div span i {
+	font-style: normal;
+	font-size:12px;
+	line-height:18px;
+	color:#ccc;
+	display: inline-block;
+	width:40%;
+	overflow: hidden;
+}
+/*添加图片 end*/
+/*评论 start*/
+.mui-content>div textarea {
+	padding:0px;
+	padding:5px;
+	margin-left:5%;
+	
+	font-size:12px;
+	width:90%;
+	height:60px;
+	margin-bottom:0px;	
+}
+/*评论 start*/
+/*提交 start*/
+#btn {
+	position:absolute;
+	width:80%;
+	height:50px;
+	border-radius: 25px;
+	background-color:#ccc;
+	margin-left:10%;
+	bottom:50px;
+	color:#fff;
+}
+/*提交 end*/
+/*.mui-content end*/

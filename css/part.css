@@ -1,0 +1,55 @@
+html,body,.mui-content {height:100%;}
+/*.mui-content start*/
+/*.mui-content #container start*/
+.mui-content #container {
+	height:30%;
+	width:100%;
+	background:linear-gradient(skyblue,dodgerblue);
+	text-align: center;
+	position: fixed;
+	z-index: 99;
+}
+.mui-content #container p {
+	font-size:35px;
+	color:#fff;
+	font-weight: bolder;
+	position: absolute;
+	width: 100%;
+	top:35%;
+}
+.mui-content #container p:last-child {
+	top:60%;
+	font-weight:normal;
+	font-size:24px;
+}
+/*.mui-content #container end*/
+/*信用分列表 start*/
+.mui-content #lis {
+	margin-top:45%;
+	padding:0px;
+	padding:20px;
+}
+.mui-content #lis li {
+	list-style: none;
+	height:50px;
+	font-size:12px;
+	border-bottom:1px solid #ddd;
+}
+.mui-content #lis li span {
+	display: inline-block;
+	width:40%;
+	line-height:50px;
+	position:relative;
+}
+.mui-content #lis li span:last-child {
+	float:right;
+	width:auto;
+}
+.mui-content #lis li span i {
+	font-style:normal;
+	position:absolute;
+	top:15px;
+	left:0px;
+}
+/*信用分列表 end*/
+/*.mui-content end*/

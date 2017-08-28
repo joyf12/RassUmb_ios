@@ -1,0 +1,10 @@
+.mui-bar-nav a {color:#000;}
+.mui-bar-tab {top:44px;height:20px;}
+.mui-bar-tab .ad {
+	line-height:20px;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	padding-left:10px;
+	width:100%;
+	}

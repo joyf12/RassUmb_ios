@@ -1,0 +1,35 @@
+/*.mui-content start*/
+.mui-content {
+	padding:20px;
+}
+.mui-content>span {
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	margin-top:10px;
+	font-size:12px;
+	color:#999;
+}
+.mui-content div {
+	margin-top:50px;
+}
+.mui-content div:first-child {
+	padding-top:20px;
+	margin:0px;
+}
+.mui-content div h3 {
+	font-weight: bolder;
+}
+.mui-content div span {
+	font-size:12px;
+	color:#999;
+}
+.mui-content #btn {
+	width:100%;
+	margin-top:150px;
+	height:40px;
+	border-radius: 20px;
+	background:linear-gradient(transparent,#ddd)
+}
+
+/*.mui-content end*/

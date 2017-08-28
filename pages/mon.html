@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mon.css"/>
+		<link rel="stylesheet" href="../css/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <button type="button" class="mui-pull-right" id="deta">明细</button>
+		</header>
+		
+		<div class="mui-content">
+		    <h2>我的钱包</h2>
+		    <div id="diff">
+		    	<p>总余额<strong>0元</strong></p>
+		    </div>
+		    <ul id="list">
+		    	<li id="mark">
+		    		<span>信用分</span>
+		    		<i>0分</i>
+		    	</li>
+		    	<li id="pay">
+		    		<span>押金</span>
+		    		<i id="state">已交押金</i>
+		    	</li>
+		    </ul>
+		    <button type="button" id="btn" class="mui-btn">余额充值</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			//充值明细
+			document.getElementById('deta').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'deta.html'
+				})
+			})
+			//信用分
+			document.getElementById('mark').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'mark.html'
+				})
+			})
+			//充值押金
+			document.getElementById('pay').addEventListener('tap',function(){
+				var stat = document.getElementById('state').innerHTML;
+				if(stat == '未交押金'){
+					mui.openWindow({
+						url:'pay.html'
+					})
+				}else{
+					//跳转退押金查看页面
+					mui.openWindow({
+						url:'return.html'
+					})
+				}
+			})
+			//余额充值
+			document.getElementById('btn').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'money.html'
+				})
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/rests.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background:transparent;">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		</header>
+		<div class="mui-content">
+			<div>
+				<h3>非大陆身份认证</h3>
+				<span>身份验证仅用于验证您的身份信息</span>
+			</div>
+			<div>
+				<input type="text" id="name" placeholder="请输入真实姓名" />
+				<input type="number" id="num" placeholder="请输入身份证号" />
+				<input type="text" id="coun" placeholder="输入国籍/地区" />
+			</div>
+			<button type="button" id="btn">下一步</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady();
+			document.getElementById('btn').addEventListener('tap',function(){
+				var nam = document.getElementById('name').value;
+				var num = document.getElementById('num').value;
+				var coun = document.getElementById('coun').value;
+				if(nam && num && coun){
+					mui.openWindow({
+						url:'upload.html'
+					})
+				}else{
+					mui.toast('您还有资料未填写');
+				}
+			})
+			
+		</script>
+	</body>
+
+</html>

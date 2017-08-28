@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/phone.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-arrowthinleft mui-pull-left"></a>
+		    <h1 class="mui-title">更改手机号</h1>
+		</header>
+		<div class="mui-content">
+		    <div>
+		    	<p>更换手机号</p>
+		    	<p>请先填写您当前手机号实名认证的身份信息</p>
+		    	<input type="text" id="name" placeholder="请输入姓名"/>
+		    	<input type="number" id="num" placeholder="请输入证件号码" />
+		    	<button type="button" id="btn">下一步</button>
+		    </div>
+		    
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady();
+		</script>
+		<script type="text/javascript">
+			//点击下一步
+			document.getElementById('btn').addEventListener('tap',function(){
+				//获取姓名和号码
+				var name = document.getElementById('name').value;
+				var number = document.getElementById('num').value;
+				//请求数据库中的用户姓名和号码判断
+				
+				
+				//判断通过设置新手机号
+				mui.openWindow({
+					url:'newPhone.html'
+				})
+			})
+		</script>
+	</body>
+
+</html>

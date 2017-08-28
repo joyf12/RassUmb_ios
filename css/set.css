@@ -1,0 +1,33 @@
+html{height:100%;}
+body {height:100%;}
+.mui-content {
+	height:100%;
+	padding:0px;
+	margin:20px 20px;
+	position:relative;
+}
+.mui-content ul {
+	padding:0px;
+	margin:0px;
+	}
+.mui-content ul li {
+	list-style: none;
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #ddd;
+}
+.mui-content ul li a {
+	color:#666;
+	line-height:50px;
+}
+#btn {
+	width:100%;
+	padding:0px;
+	height:40px;
+	line-height:40px;
+	border-radius: 20px;
+	color:#fff;
+	position:absolute;
+	background:#aaa;
+	bottom:20%;
+}

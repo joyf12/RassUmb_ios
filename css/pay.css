@@ -1,0 +1,50 @@
+			html,body {height:100%;}
+			.mui-bar-nav ~ .mui-content {
+        		padding-top: 44px;
+    		}
+    		.mui-content {
+    			height:100%;
+    		}
+    		/*cour start*/
+    		#cour {
+    			background:linear-gradient(skyblue,dodgerblue);
+    			height:30%;
+    			padding-left:5%;
+    			padding-right:5%;
+    			text-align:center;
+    			padding-top:20%;
+    			padding-bottom:20%;
+    			font-size:12px;
+    			color:#fff;
+    		}
+    		#cour span:first-child {
+    			color:greenyellow;
+    		}
+    		/*cour end*/
+    		/*ul start*/
+    		#list {
+    			padding-left:5%;
+    			padding-right:5%;
+    		}
+    		#list li {
+    			list-style:none;
+    			font-size:18px;
+    			height:50px;
+    			width:100%;
+    		}
+    		#list li:first-child {
+    			font-size:25px;
+    			height:60px;
+    			line-height:60px;
+    			margin-bottom:17px;
+    		}
+    		#list li:first-child span {
+    			float:right;
+    		}
+    		#list li span {
+    			color:#000;
+    		}
+    		#list li input {
+    			float:right;
+    		}
+    		/*ul end*/

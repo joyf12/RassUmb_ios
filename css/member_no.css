@@ -1,0 +1,11 @@
+/*.mui-content start*/
+.mui-content ul {
+	padding:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.mui-content ul li {
+	list-style: none;
+	height:100px;
+}
+/*.mui-content end*/

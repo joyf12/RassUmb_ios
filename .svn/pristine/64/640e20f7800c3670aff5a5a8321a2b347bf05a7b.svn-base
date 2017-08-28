@@ -1,0 +1,16 @@
+html,body,.mui-content{height:100%;}
+/*.mui-content start*/
+.mui-content #contain {
+	background:deepskyblue;
+	height:40%;
+	text-align:center;
+	padding-top:20%;
+	color:greenyellow;
+	font-size:14px;
+}
+.mui-content #contain p {
+	color:#fff;
+	font-size:30px;
+	padding-bottom:10%;
+}
+/*.mui-content end*/

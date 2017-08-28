@@ -1,0 +1,27 @@
+.mui-content p {
+	width:100%;
+	background-color:#eee;
+	height:30px;
+	line-height:30px;
+	margin:0px;
+	font-size: 12px;
+}
+.mui-content p span {padding-left:20px;}
+.mui-content ul {
+	margin:0px;
+	padding:0px;
+	
+}
+.mui-content ul li {
+	list-style: none;
+	padding-left:20px;
+	padding-right:20px;
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	background-color:#ddd;
+}
+.mui-content ul li a {
+	color:#aaa;
+	line-height:50px;
+}

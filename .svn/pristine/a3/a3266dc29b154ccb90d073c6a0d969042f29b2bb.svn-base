@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../css/approve.css"/>
+		<script src="../js/mui.min.js"></script>
+		
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">实名认证</h1>
+		</header>
+		
+		<div class="mui-content">
+		    <div id="cour">
+		    	<span>手机验证——</span>
+		    	<span>押金充值——</span>
+		    	<span>实名认证——</span>
+		    	<span>注册成功</span>
+		    </div>
+		    <form class="mui-input-group">
+		    	<div class="mui-input-row">
+					<label>姓名</label>
+					<input type="text" id="phoneNumber" placeholder="请输入真实姓名">
+				</div>
+				
+				<div class="mui-input-row">
+					<label>身份证号</label>
+					<input type="number" id="code" class="mui-input-clear" placeholder="请输入身份证号">
+				</div>
+				<div class="mui-button-row">
+					<button type="button" id="btn" class="mui-btn">认证</button>
+				</div>
+			</form>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

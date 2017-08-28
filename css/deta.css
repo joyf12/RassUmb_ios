@@ -1,0 +1,17 @@
+/*.mui-content start*/
+.mui-content #lis {
+	padding:0px;
+	margin-left:20px;
+	margin-right:20px;
+	}
+.mui-content #lis li {
+	list-style:none;
+	background:linear-gradient(#ccc,#999);
+	padding:10px 10px;
+	border-radius: 5px;
+	margin-bottom:20px;
+}
+.mui-content #lis li .right {
+	float:right;
+}
+/*.mui-content end*/

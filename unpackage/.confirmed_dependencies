@@ -1,0 +1,236 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"js/mui.js",
+			"js/jquery.i18n.properties-1.0.9.js",
+			"i18n/strings.properties",
+			"i18n/strings_zh.properties",
+			"js/jquery-1.7.1.min.js"
+		],
+		"refer": [
+			"pages/user.html",
+			"pages/message.html",
+			"pages/name.html"
+		]
+	},
+	"pages/message.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/message.css",
+			"js/mui.min.js"
+		]
+	},
+	"pages/user.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/user.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		],
+		"refer": [
+			"pages/mon.html",
+			"pages/record.html",
+			"pages/set.html",
+			"pages/guide.html",
+			"pages/call.html",
+			"pages/member.html",
+			"pages/part.html",
+			"pages/card.html",
+			"pages/img.html"
+		]
+	},
+	"pages/mon.html": {
+		"resources": [
+			"css/mon.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"pages/mark.html",
+			"pages/pay.html",
+			"pages/money.html",
+			"pages/deta.html",
+			"pages/return.html"
+		]
+	},
+	"pages/record.html": {
+		"resources": [
+			"css/record.css"
+		]
+	},
+	"pages/pay.html": {
+		"resources": [
+			"css/pay.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"pages/set.html": {
+		"resources": [
+			"css/set.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"pages/about.html",
+			"pages/serve.html",
+			"pages/recharge.html",
+			"pages/cash.html"
+		]
+	},
+	"pages/about.html": {
+		"resources": [
+			"images/user.png",
+			"css/about.css"
+		]
+	},
+	"pages/guide.html": {
+		"resources": [
+			"css/guide.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"pages/recharge.html",
+			"pages/cash.html",
+			"pages/account.html",
+			"pages/problems.html",
+			"pages/report.html",
+			"pages/real.html"
+		]
+	},
+	"pages/recharge.html": {
+		"resources": [
+			"css/recharge.css"
+		]
+	},
+	"pages/cash.html": {
+		"resources": [
+			"css/cash.css"
+		]
+	},
+	"pages/account.html": {
+		"resources": [
+			"css/account.css"
+		]
+	},
+	"pages/report.html": {
+		"resources": [
+			"images/999.png",
+			"css/report.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"pages/card.html": {
+		"resources": [
+			"css/card.css"
+		]
+	},
+	"pages/real.html": {
+		"resources": [
+			"css/real.css"
+		]
+	},
+	"pages/part.html": {
+		"resources": [
+			"css/part.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"pages/img.html": {
+		"resources": [
+			"css/img.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"images/user.png"
+		],
+		"refer": [
+			"pages/nickname.html",
+			"pages/phone.html",
+			"pages/password.html"
+		]
+	},
+	"pages/nickname.html": {
+		"resources": [
+			"css/nickname.css",
+			"fonts/iconfont.ttf",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"pages/phone.html": {
+		"resources": [
+			"css/phone.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"pages/money.html": {
+		"resources": [
+			"css/money.css"
+		]
+	},
+	"pages/password.html": {
+		"resources": [
+			"css/password.css"
+		]
+	},
+	"pages/deta.html": {
+		"resources": [
+			"css/deta.css"
+		]
+	},
+	"pages/return.html": {
+		"resources": [
+			"css/return.css"
+		]
+	},
+	"pages/name.html": {
+		"resources": [
+			"css/name.css",
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"pages/problems.html": {
+		"resources": [
+			"css/problems.css"
+		],
+		"refer": [
+			"pages/account.html"
+		]
+	}
+}

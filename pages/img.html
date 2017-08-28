@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/img.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">个人信息</h1>
+		</header>
+		<div class="mui-content">
+		    <ul>
+		    	<li>
+		    		<span>头像</span>
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<img src="../images/user.png" alt="" />
+		    	</li>
+		    	<li id="nickname" onclick='clicked(this.id)'>
+		    		<span>昵称</span>
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span id="nick">17688888888</span>
+		    	</li>
+		    	<li>
+		    		<span>姓名</span>
+		    		<a></a>
+		    		<span>小明</span>
+		    	</li>
+		    	<li>
+		    		<span>实名认证</span>
+		    		<a></a>
+		    		<span>已认证</span>
+		    	</li>
+		    	<li id="phone" onclick='clicked(this.id)'>
+		    		<span>手机号</span>
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span id="num">17688888888</span>
+		    	</li>
+		    	<li id="password" onclick='clicked(this.id)'>
+		    		<span>修改密码</span>
+		    		<a class="mui-icon mui-icon-arrowright mui-pull-right"></a>
+		    		<span></span>
+		    	</li>
+		    </ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady();
+		</script>
+		<script type="text/javascript">
+			var number = '';
+			function clicked(id){
+				if(id=='nickname'){
+					number = document.getElementById('nick').innerHTML;
+				}else if(id=='phone'){
+					number = document.getElementById('num').innerHTML;
+				}
+				mui.openWindow({
+					url:id+'.html',
+					extras:{
+						number:number
+					}
+				})
+			}
+		</script>
+	</body>
+
+</html>

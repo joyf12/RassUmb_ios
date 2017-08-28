@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/message.css"/>
+		<script src="../js/jquery-1.7.1.min.js"></script>
+		<script src="../js/jquery.i18n.properties-1.0.9.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" id="my">我的消息</h1>
+		</header>
+		<div class="mui-content">
+		    <ul id="list">
+		    	<li>第一条消息</li>
+		    </ul>
+		</div>
+		
+		<script type="text/javascript">
+			mui.init()
+			var lang = '';
+		    $(function() {
+		                lang = (jQuery.i18n.browserLang().substring(0, 2)); //默认从浏览器语言读取
+		              	
+		                jQuery.i18n.properties({
+		                    name: 'strings',
+		                    path: 'i18n/', //资源文件路径
+		                    mode: 'map', //用Map的方式使用资源文件中的值
+		                    language: lang,
+		                    callback: function() { //加载成功后设置显示内容
+		                    	console.log($.i18n.prop('my'));
+		                        $('#my').html($.i18n.prop('my'));
+		                    }
+		                });
+		            })        
+		</script>
+	</body>
+
+</html>

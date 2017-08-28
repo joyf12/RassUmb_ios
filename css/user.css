@@ -1,0 +1,64 @@
+/*.mui-bar-tab start*/
+.mui-bar-tab {width:100%;}
+.mui-bar-tab span {
+	display:inline-block;
+	width:20%;
+	text-align:center;
+	line-height:50px;
+}
+.mui-bar-tab span:last-child {
+	width:40%;
+}
+/*.mui-bar-tab end*/
+/*.mui-content start*/
+.mui-content>div:first-child {
+	padding:30px 15px;
+	background-color:#ccc;
+} 
+.mui-content #img {
+	display: inline-block;
+	width:15%;
+	margin-right:5%;
+}
+.mui-content #img a {
+	font-size:50px;
+	color:cornflowerblue;
+}
+.mui-content #mes {
+	display: inline-block;
+	width:70%;
+}
+.mui-content #mes p {
+	margin-bottom:0px;
+}
+.mui-content #mes #phone {
+	display: inline-block;
+	margin-bottom:3px;
+}
+.mui-content #part {
+	display: inline-block;
+	width:60%;
+	text-align:center;
+	border:1px solid #4998a1;
+	border-radius:10px;
+	color:#fff;
+	background-image: linear-gradient(90deg,#4998a1,#2e828b)
+}
+.mui-content #row {
+	background-color:#fff;
+}
+.mui-content #row .mui-table-view-cell {
+	list-style: none;
+	text-align: center;
+}
+.mui-content .container .lis {
+	padding:20px 30px;
+}
+.mui-content .container .lis li {
+	list-style: none;
+	margin-bottom:20px;
+}
+.mui-content .container #bal {
+	float: right;
+}
+/*.mui-content end*/

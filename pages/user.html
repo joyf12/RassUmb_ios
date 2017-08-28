@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" href="../css/user.css" />
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init();
+			mui.plusReady();
+		</script>
+	</head>
+	
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title" id="user_mes">用户信息</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<span id="set" onclick="clicked(this.id)">设置</span>
+			<span id="guide" onclick="clicked(this.id)">用户指南</span>
+		</nav>
+		<div class="mui-content">
+		    <div>
+		    	<a href="#">
+		    		<div id="img" onclick="clicked(this.id)">
+		    			<a class="mui-icon iconfont icon-yonghutouxiang"></a>
+		    		</div>
+		    		<div id="mes">
+		    			<div>
+		    				<p><span id="phone">15323529581</span></p>
+		    				<p><span id="part" onclick="clicked(this.id)">信用分<strong>&nbsp;100</strong></span></p>
+		    			</div>
+		    			
+		    		</div>
+		    	</a>
+		    </div>
+		    <div id="row" class="mui-row">
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+						        <p>135</p>
+						        <p>里程(千米)</p>
+						</li>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+						       <p>300</p>
+						        <p>消耗(千卡)</p> 
+						</li>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+						        <p>20</p>
+						        <p>减排(千克)</p>
+						</li>
+					</div>
+			</div>
+		    <div class="container">
+		    	<ul class="lis">
+		    		<li id="mon" onclick="clicked(this.id)">
+		    			<span class="mui-icon iconfont icon-qianbao">&nbsp;我的钱包 </span>
+		    			<strong id="bal">0元</strong>
+		    		</li>
+		    		<li id="card" onclick="clicked(this.id)">
+		    			<span class="mui-icon iconfont icon-qiaquan">&nbsp;我的卡券</span>
+		    		</li>
+		    		<li id="record" onclick="clicked(this.id)">
+		    			<span class="mui-icon iconfont icon-jilu">&nbsp;用车记录</span>
+		    		</li>
+		    		<li id="call" onclick="clicked(this.id)">
+		    			<span class="mui-icon iconfont icon-yaoqinghaoyou"></span>
+		    		</li>
+		    	</ul>
+		    </div>
+		</div>
+		<script>
+			function clicked(id){
+				mui.openWindow({
+					url:id+'.html'
+				})
+			}
+//			//会员信息
+//			document.getElementById('member').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'member.html'
+//				})
+//			})
+//			//我的钱包
+//			document.getElementById('mon').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'mon.html'
+//				})
+//			})
+//			//我的卡券
+//			document.getElementById('card').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'card.html'
+//				})
+//			})
+//			//借伞记录
+//			document.getElementById('record').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'record.html'
+//				})
+//			})
+//			//邀请好友
+//			document.getElementById('call').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'call.html'
+//				})
+//			})
+//			//设置
+//			document.getElementById('set').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'set.html'
+//				})
+//			})
+//			//用户指南
+//			document.getElementById('guide').addEventListener('tap',function(){
+//				mui.openWindow({
+//					url:'guide.html'
+//				})
+//			})
+		</script>
+	</body>
+
+</html>

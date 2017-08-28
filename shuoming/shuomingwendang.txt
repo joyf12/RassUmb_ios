@@ -1,0 +1,58 @@
+样式：css文件夹下的Login_module存放登陆注册样式
+
+配置：项目目录下config.js，存放整个项目的接口配置文件
+
+图片文件：项目目录下的images 存放整个项目的图片
+
+页面：所有html文件存放在pages目录下
+
+后续更新。。。。
+
+页面关系
+首页：index.html
+	用户注册：
+		手机验证：register.html
+			用车协议：serve.html
+		押金充值:pay.html
+		实名认证:name.html
+			注册成功:register_success.html
+			非大陆身份认证：rests.html
+				上传照片：upload.html
+		注册成功:approve.html
+	骑行结束：rid_success.html
+		行程详情:route.html
+	个人消息：message.html
+	用户信息：user.html
+		信用分:part.html
+		个人信息：img.html
+			修改头像：
+			修改昵称：nickname.html
+			修改手机号：phone.html
+			修改密码：password.html
+	我的钱包：mon.html
+		明细：deta.html
+		信用分:mark.html
+		押金：
+			退押金：return.html
+			押金充值：pay.html
+		余额充值：money.html
+	我的卡券：card.html
+		卡券说明：coupon.html
+	用车记录：record.html
+	邀请好友：call.html
+	设置：set.html
+		用户协议：agree.html
+		押金及计价：cash.html
+		充值说明：recharge.html
+		检查新版本：
+		关于我们:about.html
+		退出登录
+	用户指南：guide.html
+		注册与账户:account.html
+		实名认证相关:real.html
+		开不了锁:lock.html
+		押金说明：cash.html
+		充值说明：recharge.html
+		举报违停：report.html
+		全部问题:problems.html
+

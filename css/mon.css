@@ -1,0 +1,60 @@
+html,body {height:100%;position: relative;}
+i {font-style: normal;}
+.mui-bar-nav~.mui-content {padding-top:70px;}
+/*header start*/
+.mui-bar-nav a {color:#666;}
+.mui-bar-nav button {
+	background-color:transparent;
+	border:none;
+	margin-top:6px;
+	color:#666;
+	font-size:16px;
+}
+/*header end*/
+/*.mui-content start*/
+.mui-content {
+	padding-left:20px;
+	padding-right:20px;
+}
+.mui-content #diff {height:80px;}
+.mui-content #diff p {
+	position: relative;
+	margin-top:30px;
+	margin-bottom:30px;
+	text-align:center;
+	font-size:30px;
+}
+.mui-content #diff p strong {
+	position:absolute;
+	top:50px;
+	left:44%;
+}
+.mui-content ul {
+	padding:0px;
+	font-size:20px;
+	}
+.mui-content ul li {
+	list-style: none;
+	height:80px;
+	line-height:100px;
+	border-bottom:1px solid #ccc;
+}
+.mui-content ul li span {
+	padding-left:10px;
+}
+.mui-content ul li i {float:right;height:50px;}
+/*.mui-content end*/
+
+/*button start*/
+#btn {
+	position:absolute;
+	width:90%;
+	padding:0px;
+	height:50px;
+	border-radius:25px;
+	background-color:dodgerblue;
+	color:#fff;
+	left:5%;
+	bottom:10px;
+}
+/*button end*/

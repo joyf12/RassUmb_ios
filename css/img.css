@@ -1,0 +1,26 @@
+/*.mui-content ul start*/
+.mui-content ul {
+	margin:0px;
+	padding:0px;
+	padding:5px 20px;
+}
+.mui-content ul li {
+	
+	list-style: none;
+	height: 50px;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+}
+.mui-content ul li img {
+	width:12%;
+	float: right;
+}
+.mui-content ul li span:nth-child(3) {
+	float: right;
+	color:#999;
+}
+.mui-content ul li a {
+	line-height:50px;
+	color:#ccc;
+}
+/*.mui-content ul end*/

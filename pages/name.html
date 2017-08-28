@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/name.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">法瑞纳单车</h1>
+		</header>
+		<!--注册成功-->
+			<div id="succ">
+				<p class="mui-icon iconfont icon-zhucechenggong"></p>
+				<p>提交成功</p>
+			</div>
+		<div class="mui-content">
+			<div>
+				<h3>实名认证</h3>
+				<span>身份验证仅用于验证您的身份信息</span>
+			</div>
+			<div>
+				<input type="text" id="name" placeholder="请输入真实姓名" />
+				<input type="number" id="num" placeholder="请输入身份证号" />
+			</div>
+			<button type="button" id="btn">提交</button>
+			<span>没有中国大陆居民身份证 <a href="#" id="rests">请点这里</a></span>
+			
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady();
+			clearTimeout('tim1');
+			clearTimeout('tim2');
+			var nam = document.getElementById('name').value;
+			var num = document.getElementById('num').value;
+			var mask = mui.createMask();
+			document.getElementById('btn').addEventListener('tap',function(){
+				if(!nam && !num){
+					alert('提交信息')
+					//提交信息，显示等待框
+					var mask = mui.createMask();
+					mask.show();
+					var w = plus.nativeUI.showWaiting('提交中...')
+					//提交成功之后取消等待窗
+					var tim1 = setTimeout(function(){
+						w.close();
+						document.getElementById('succ').style.display='block';
+					},1000)
+					
+					var tim2 = setTimeout(function(){
+						clearTimeout(tim1);
+						document.getElementById('succ').style.display='none';
+						mask.close(); 
+						plus.webview.currentWebview().close();
+					},2000)
+				}
+			})
+			//非大陆认证
+			document.getElementById('rests').addEventListener('tap',function(){
+				mui.openWindow({
+					url:'rests.html'
+				})
+			})
+		</script>
+	</body>
+
+</html>
